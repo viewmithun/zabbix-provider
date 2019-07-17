@@ -66,7 +66,8 @@ func resourceZabbixHost() *schema.Resource {
 			},
 			"host_id": &schema.Schema{
 				Type:        schema.TypeString,
-                                Optional:    true,
+                            	Required:    true,
+				Description: "ID of the host"
 			},
 			"name": &schema.Schema{
 				Type:        schema.TypeString,
